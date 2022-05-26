@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KỌ́MỌNÍWÀ</title>
+
+    <!-- font awesome cdn link  -->     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<style>
+    .answe{
+        display: flex;
+        flex-direction: column;
+        color: red;
+    }
+    .space{
+       
+        margin: 15px;
+    }
+    .container{
+        text-align: center;
+        z-index: 1000;
+        width: 100%;
+        height: 50%;
+        background-color: rgb(224, 224, 224);
+        /* background: linear-gradient(to right bottom, rgba(255,255,255, 0.9),  rgba(255,255,255, 0.9)); */
+        /* background-color: red; */
+        display: none;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+   
+    .corr{
+        text-decoration: underline;
+    }
+    .pop_el{
+        text-shadow: 2px 2px 5px red;
+        margin-bottom: 30px;
+    }
+    .active{
+        display: block;
+        transition: all 3s ease;
+    } 
+    .ok:hover{
+        box-shadow: 2px 2px 5px red;
+    }
+    .place{
+        text-align: center;
+        font-size: 25px;
+    }
+    .optio{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .button{
+        text-align: center;
+    }
+    .button button{
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px 3px (black);
+    }
+    .container{
+        position: absolute;
+        left: 33%;
+        top: 20%;
+        font-size: 30px;
+        width: 40%;
+    }
+    #wow{
+        font-size: 20px;
+    }
+    .align{
+        margin-left: 10px;
+    }
+    .share{
+        display: flex;
+    }
+    marquee{
+        text-align: center;
+        font-size: 10px;
+    }
+    .confir{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    justify-content: center;
+       
+    }
+ 
+</style>
+
+<div class="all">
+
+<body id="body">
+    <!-- <style>
+        *{
+            border-right: 1px solid red;
+        }
+    </style> -->
+    
+<!-- header section starts  -->
+
+<header class="header">
+    
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <!-- <a href="#menu">Specialization</a> -->
+        <!-- <a href="#products">Products</a> -->
+        <a href="#review">Proverb</a>
+        <a href="#blogs">Yoruba Sing-alongs</a>
+        <a href="#quiz">Yoruba  Quiz</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+    <div> <marquee style="color: var( --main-color); font-size: 17px;" behavior="left" direction="scroll">E Kaabo si itakun agbaye Komoniwa!</marquee></div>
+
+     <div class="social-media">
+        
+        <div class="share">
+            <a href="https://web.facebook.com/komoniwa1" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/Komoniwa1" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/komoniwa1/" class="fab fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCcnvgHT8QTEdCkCe1KqOC7g " class="fab fa-youtube"></a>
+        </div>
+    </div>  
+
+   
+     <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div> -->
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <!-- <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-1.png" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-2.png" alt="">
+            <div class="content">
+                <h3>cart item 02</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-3.png" alt="">
+            <div class="content">
+                <h3>cart item 03</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+  -->
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content" id="conte">
+         <h3 class="kom">KỌ́MỌNÍWÀ</h3>
+        <h2 class="virt">Ìwà rere l'ẹṣọ́ ènìyàn
+            (Virtue is Man's pearl)</h2>
+        <a href="#menu" class="btn">Explore</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span>about</span> </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/Web-thumb (2).jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>Who is KỌ́MỌNÍWÀ ?</h3>
+            <p>The term KỌ́MỌNÍWÀ is a yoruba word which implies "He who instills virtue". It is coined from three individual words; </p>
+            <ul class="komoniwa">
+                <li>Kọ́ - Teach</li>
+                <li>Ọmọ - Children (interpretes to "People" in this instance)</li>
+                <li>Ìwà - Behavior/Virtue</li>
+            </ul>
+            
+            <p class="rev"><span style="display: flex; align-items: center; justify-content: center; text-align: center;">The blend-up of the three individual words above resulted in the parent word "KỌ́MỌNÍWÀ".</span>  <br> Kọ́mọníwà (He who teaches good behaviour) is one of the most intriguing Yorùbá Creative whose motive towards being a Content Creator doing Yorùbá Motivations as a form of Art is to fuel a society which is morally upright, Inspired/motivated, and reflects a true definition of Humanity. Putting forward his Indigenous Language as the articulate means to dispense the goals so that they can fall in line with preserving our Language and Culture as Yorubas.<!-- and these individual words do not necessarily retain their meaning in the parent word. they have a slight change in semantics combining together thus giving the meaning expressed the above --> <br> <br>  My name is KỌ́MỌNÍWÀ and it's my pleasure having you around! </p>
+            <a href="#" class="btn">Know more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> Skill<span>SET</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img style="width: 300px;  padding-right: 45px;" src="images/IMG_20191119_143744_4 (2).jpg" alt="">
+            <h3>Content Creator</h3>
+            <cite>KỌ́MỌNÍWÀ Yoruba Motivation</cite>
+            <div class="price"> <span></span></div>
+            <a href="#" class="btn">Watch Videos</a>
+        </div>
+
+
+        <div class="box">
+            <img src="images/Ami Ohun.00_02_54_21.Still001 (2).jpg" alt="">
+            <h3>Yoruba Language Instructor</h3>
+            <cite>Learn Yoruba Language with ease</cite>
+            <div class="price"><span></span></div>
+            <a href="#" class="btn">Enroll</a>
+        </div>
+
+      
+        <div class="box">
+            <img style="width: 180px;" src="images/Purple.jpg" alt="">
+            <h3>Video Services</h3>
+            <cite>Purple Creations</cite>
+            <div class="price"><span></span></div>
+            <a href="#" class="btn">Hire</a>
+        </div>
+
+<!-- 
+        <div class="box">
+            <img src="images/menu-4.png" alt="">
+            <h3>tasty and healty</h3>
+            <div class="price"> <span></span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div> -->
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<section class="products" id="products">
+
+    <div class="box-container">
+
+        <div class="box">
+          <!--  <h2 style="color: white; font-size: 4em; font-family: sans-serif;">Have a  <span style="color: #d3ad7f;">SNIPPET</span> </h2> -->
+            <div class="images">
+               <embed style="width: 100%;" controls src="https://www.youtube.com/embed/kN-CXAGabas">>
+                    
+               </embed>
+            </div>
+    </div>
+</section>
+
+<!-- review section starts  -->
+<section class="review" id="review">
+
+    <h1 class="heading"><span>PROVERB </span>OF THE WEEK</h1>
+
+    <div class="box-container">
+
+        <div class="box" id="proverb">
+            
+            <!-- <img style="border-radius: 20px;" src="images/Pot b.jpg" class="user" alt="">
+        <div class="carol">
+            <button>prev</button>
+            <button>next</button>
+        </div>
+            <p style="font-size: 30px;"><b>" ÌKÒKÒ TÍ Ó J’ATA, ÌDÍI RẸ̀ Ó GBÓNÁ "</b><br></p>
+                <p><b style="text-decoration: underline 2px;">Translation</b><br>  For an ancient pot (Clay pot) to taste the pepper sauce being cooked in it,<br> it’s bottom will have to withstand the pressure of fire.<br>
+                
+               <br><b style="text-decoration: underline 2px;">Interpretation</b><br> This Proverb teaches that anyone who aims or wishes to enjoy/benefit from <br> an endeavor or course will have to endure any pain attached to it.<br>
+                This is in agreement with the English popular saying;<br> <b>NO PAIN, NO GAIN!</b> </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div> -->
+        </div>
+
+        
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<!-- <section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.63274002587!2d3.143529871773492!3d6.548035603058628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1644442740675!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" allowfullscreen="" loading="lazy"></iframe>
+
+        <form method="post" action="https://formspree.io/f/xeqnawag">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span  class="fas fa-envelope"></span>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="input">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message" ></textarea>
+            </div>
+            <input type="submit" value="contact now" class="btn">
+           <div id="status">Success</div> -->
+        </form>
+
+    </div>
+
+</section> -->
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> Yoruba <span>Sing-alongs</span> </h1>
+    <a href="https://yaraikawe.com/eko-omodeyoruba-language-for-kids/"><cite >Learn Yoruba language with fun and entertainment</cite></a>
+<br><br><br>
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/ABD Cartoon.00_00_57_07.Still004.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="https://yaraikawe.com/product/alifabeti-ede-yoruba-yoruba-alphabets/" class="title">Yoruba Alphabet</a>
+                <span>Sing-along video</span>
+                <p>Learn the Alphabets of the Yoruba language with ease and fun.</p>
+                <a href="https://yaraikawe.com/product/alifabeti-ede-yoruba-yoruba-alphabets/" class="btn">Order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/Onka Ede Yoruba.00_01_28_08.Still002.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="https://yaraikawe.com/product/oǹka-ede-yoruba-yoruba-numbers/" class="title">Yoruba Numbers</a>
+                <span>Sing-along video</span>
+                <p>"1-10" in yoruba language just got easy and fun to learn.</p>
+                <a href="https://yaraikawe.com/product/oǹka-ede-yoruba-yoruba-numbers/" class="btn">Order now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/Ami Ohun.00_02_54_21.Still001 (2).jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="title">Days of the Week</a>
+                <span>Sing-along video</span>
+                <p>Week days in Yoruba.</p>
+                <a href="#" class="btn">Order now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="quiz" id="quiz">
+    <div class="con-quiz">
+        <h1 class="read">How well did you know Yoruba language?</h1>
+        <h3 class="emoji">Attempt my Quiz to assess yourself 🌝</h3>
+        <button onclick="quiz()" class="quiz_button">Start Quiz</button>
+    </div>
+</div>
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+<section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span></h1>
+
+    <div class="row">
+
+        <iframe class="map" src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.63274002587!2d3.143529871773492!3d6.548035603058628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1644442740675!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" allowfullscreen="" loading="lazy"></iframe>
+
+        <form method="post"  action="https://formspree.io/f/mrgjjqll">
+            <h3>get in touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input name="name" type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <span  class="fas fa-envelope"></span>
+                <input name="email" type="email" placeholder="email">
+            </div>
+            <div class="input">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message" ></textarea>
+            </div>
+            <!-- <input  value="contact now send" class="btn"> -->
+            <button value="send" type="submit" class="btn">contact now </button>
+         <!--    <div id="status">Success</div> -->
+        </form>
+
+    </div>
+
+</section>
+
+<section class="footer">
+
+    <div class="share">
+        <a href="https://web.facebook.com/komoniwa1" class="fab fa-facebook-f"></a>
+        <a href="https://twitter.com/Komoniwa1" class="fab fa-twitter"></a>
+        <a href="https://www.instagram.com/komoniwa1/" class="fab fa-instagram"></a>
+    </div>
+
+ 
+
+
+
+    <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Specialization</a>
+        <!-- <a href="#products">Products</a> -->
+        <a href="#review">Owe</a>
+        <a href="#contact">Contact</a>
+        <a href="#blogs">Blogs</a>
+    </div>
+
+    <div class="credit">(c) <span>KỌ́MỌNÍWÀ</span> | 2022</div>
+    <div style="color: white; font-size: 15px;">Website Design by Oslim</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+</div>
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+    //QUIZ PAGE
+    let Question=[
+            {
+                What: 'What is “Morning” in Yoruba?',
+                Option:
+                [
+                    'Àárọ̀',
+                    'Ọ̀sán',
+                    'Ìrọ̀lẹ',
+                    'Alẹ́'
+                ],
+                 Answer:'',
+                corret:'Àárọ̀'
+
+            },
+
+        {  What: 'How do we greet in the morning?  ',
+            Option:[
+                'Ẹ-káàsán',
+                'Ẹ-kú-Ìrọ̀lẹ́ ',
+                'Ẹ-káàárọ̀',
+                'Ẹkáalẹ́'
+            ],
+        Answer:'',
+        corret:'Ẹ-káàárọ̀',
+
+        },
+        {  What: 'How do we greet in the Afternoon?  ',
+            Option:[
+                'Ẹ-káàárọ̀',
+                'Ẹ-káàsán',
+                'Ẹ-kú-Ìrọ̀lẹ́ ',
+                'Ẹ-káalẹ́'
+            ],
+        Answer:'',
+        corret:'Ẹ-káàsán',
+
+        },
+
+        {  What: 'What is “Evening” in Yoruba?',
+            Option:[
+                'Ìrọ̀lẹ́',
+                'Àárọ̀',
+                'Ọ̀sán',
+                'Alẹ'
+            ],
+        Answer:'',
+        corret:'Ìrọ̀lẹ́',
+
+        },
+
+        {  What: 'How do we greet in the Night?    ',
+            Option: [
+              'Ẹ-káàárọ̀',
+              'Ẹ-káàsán',
+              'Ẹ-káalẹ́',
+              'Ẹ-kú-Ìrọ̀lẹ́'
+            ],
+            Answer:'',
+            corret:'Ẹ-káalẹ́',
+            },
+
+
+        {  What: 'How do we greet in the Evening?  ',
+            Option: [
+              'Ẹ-káàárọ̀',
+              'Ẹ-káàsán',
+              'Ẹ-kú-Ìrọ̀lẹ́',
+              'Ẹ-káalẹ́'
+            ],
+            Answer:'',
+            corret:'Ẹ-kú-Ìrọ̀lẹ́',
+            },
+
+        {  What: 'What is “Night” in Yoruba?',
+            Option: [
+              'Àárọ̀',
+              'Ọ̀sán',
+              'Ìrọ̀lẹ́ ',
+              'Alẹ́'
+            ],
+            Answer:'',
+            corret:'Alẹ́',
+            },
+
+            
+        {  What: 'How do we bid our Family or Friends a goodnight? ',
+            Option: [
+              'Ódàbọ̀',
+              'Ẹ-káàsán',
+              'Ódàárọ̀',
+              'Ẹ-káalẹ́'
+            ],
+            Answer:'',
+            corret:'Ódàárọ̀',
+            },
+
+        {  What: 'Can you guess what the word “Greeting” means in Yoruba? ',
+            Option: [
+              'Ìkíni',
+              'Ìgbà',
+              'Ohùn',
+              'Èdè'
+            ],
+            Answer:'',
+            corret:'Ìkíni',
+            },
+
+        {  What: 'You are done with your Yoruba Quiz accessment? Click on Submit button to check your scores',
+
+            Option:[
+           
+            ]
+      
+                   }
+
+
+        ]
+
+
+
+
+
+
+       
+        let body = document.getElementById('body')
+        let index =0
+        let go =false
+        let score=0
+        let fail=0
+        let i=1;
+        let saving
+
+
+function quiz(){
+ let body=document.getElementById('body')
+ body.innerHTML=''
+ body.style.background='white'
+  body.style.color='black'
+
+
+
+
+ body.innerHTML=`<div class='place'> <div><h1>Welcome? Take your Quiz</h1>   
+            <div><h2 style="margin-bottom: 40px;">Question ${index+1} of ${Question.length}</h2></div>
+            <div><h3 class='questionaire'>${Question[index].What}</h3> </div><div>
+             
+                `
+            
+
+            Question[index].Option.forEach(max =>{
+               return body.innerHTML+=` <div class='optio'><input name='size' class="butt" value='${max}' data-number="${i++}" type="radio">
+                <span>${max}</span>               
+                </div>`
+
+         
+            })
+           
+           
+         
+            
+              //SUBMIT WARNNG
+              body.innerHTML+=`<div class="container" id='pop'>
+                     <div class="con">       
+                        <div><h1 class='pop_el'>Are you sure</h1></div>
+                        <button class="btn btn-warning ok" style="width: 70px;" onclick="finalSubmit()">Yes</button> 
+                        <button onclick="popRem()" class="btn btn-primary ok" style="width: 70px;" onclick="backSubmit()">No</button> 
+                        </div>
+                    </div>` 
+                  
+                     
+            body.innerHTML+=`<div class='button'>
+            <button style="background-color: orange;" disabled class="btn btn-primary" type="button" id="previous" onclick="handlePrev()">Previous</button>
+            <button style="background-color: blue;"  class="btn btn-primary" type="button" id="but" onclick="handleNext()">Next</button><br>
+            <button style="background-color: blue;" class="btn btn-success" id="sunmit" style="margin-top: 20px; padding: 15px;" onclick="handlesubmit()">Submit</button>
+            <div>
+            
+            </div>`
+
+            
+        body.innerHTML+=`<button  class="btn btn-primary" id='speech'>Read out Queston</button>`
+                speech=document.getElementById('speech')
+               // console.log(speech)
+                    speech.addEventListener('click',()=>{
+                       let utterance=new SpeechSynthesisUtterance(`${Question[index].What}`)
+                       speechSynthesis.speak(utterance)
+                    })
+       
+            // <h1>score :<span id='scoring'></span></h1>
+            //     <h1>fail :<span id='failing'></span></h1>
+            
+            let botton=document.querySelectorAll('.butt')
+            scoring=document.getElementById('scoring')
+            failing=document.getElementById('failing')
+            but=document.getElementById('but')
+
+         
+            return botton.forEach(max => {
+
+          return max.addEventListener('click', (e)=>{
+              
+                    let save=Question[index].corret;
+                  //  console.log(Question[index].corret, 'this is the option')
+                   return savemode=max.value;
+                    
+             })
+
+               
+            });
+       
+}
+
+          
+
+        function handleNext(){
+            let save=Question[index].corret;
+            if(index +1 < Question.length){
+                index++;
+                let butto = document.getElementById('previous')
+                butto.disabled =true;
+
+                quiz() 
+                // console.log(savemode)
+            
+                if (save === savemode) {
+                    score++
+                   // scoring.innerHTML=score
+                    // console.log(score)
+                }else{
+                    fail++;
+                  //  failing.innerHTML=fail
+                    // console.log(fail)
+                }
+
+            }
+
+            if (index == Question.length) {
+                alert('you are done move to second mission')
+                quiz()
+            }
+        }
+        
+            let button= document.getElementById('but')
+            if(button === Question.length){
+                button.disabled = true;
+            }
+ 
+             //CHECK ANSWERS
+        function finalSubmit(){
+            body.innerHTML=`<div id='wow'>
+            <div  style="display: flex; align-items: center; justify-content: center; margin-top: 150px;"><h1>You have Successfully finish the Quiz</h1></div>
+            <h1 style="display: flex; align-items: center; justify-content: center;">You scored ${score} out of ${Question.length-1}</h1>
+         
+        <div class='confir'>
+            <button id='back'  class="btn btn-success"  onclick="CheckOutAnswers()">Check answers</button>
+            <button class='btn btn-warning'>Restart</button>
+        </div>
+
+        </div>
+     `
+        }
+
+        function handlesubmit(){
+            sunmit=document.getElementById('sunmit')
+             document.getElementById('pop').classList.add('active')
+        }
+        
+            function popRem(){
+                document.getElementById('pop').classList.remove('active')
+            }
+      
+         let read=0
+         function CheckOutAnswers(){
+
+            Question.forEach(max =>{
+            wow.innerHTML=''
+          body.innerHTML+=
+           
+          `<div class='space'><h1 style="font-size: 30px;">(${read+=1})  ${max.What}</h1>
+          
+
+                <div style="display: flex; flex-direction: column;">
+                  <div style="font-size: 17px;" class='answe'>${max.Option}</div>
+                </div>
+
+                 <h5 style="font-size: 13px;">The correct Answer is <span class='corr'>${max.corret}</span></h5><div>`
+            })
+      
+            body.innerHTML+=` <div class='comingBck'><h1>come back next week for Next Quiz<h1></div> <div class='headEnd'>
+                             <button  class="btn btn-primary">Go Back to Webapage</button></div>`
+        }
+    
+
+     
+        function handlePrev(){
+            if(index > 0){
+                index--;
+                quiz();
+            };
+        };
+
+        function rad(params){
+            if(go === false){
+               let button= document.getElementById('but')
+                button.disabled = false;
+            }
+        }
+      
+        function backSubmit(){
+       
+         document.querySelector('.remo').classList.add('disab')
+            // pop.classList.add('disab')
+            // alert()
+            
+        }  
+        // function rad(){
+        //     alert()
+        //     console.log(this.value)
+        // }
+
+</script>
+
+
+
+
+</body>
+</html>
+
+
